@@ -1,6 +1,20 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% block title %}Contact - My Portfolio{% endblock %}
 {% block content %}
-<h1>Contact Me</h1>
-<p>Contact form or details here.</p>
+<h2>Contact Me</h2>
+<form>
+  <div class="mb-3">
+    <label for="name" class="form-label">Your Name</label>
+    <input type="text" class="form-control" id="name" required>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Your Email</label>
+    <input type="email" class="form-control" id="email" required>
+  </div>
+  <div class="mb-3">
+    <label for="message" class="form-label">Message</label>
+    <textarea class="form-control" id="message" rows="5" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Send</button>
+</form>
 {% endblock %}

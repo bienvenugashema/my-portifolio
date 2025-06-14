@@ -1,6 +1,9 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% block title %}Home - My Portfolio{% endblock %}
 {% block content %}
-<h1>Welcome to My Portfolio</h1>
-<p>This is the homepage.</p>
+<div class="text-center">
+  <h1 class="display-4">Hi, I'm Bienvenu 👋</h1>
+  <p class="lead">I'm a Python developer focused on cybersecurity, web apps, and automation.</p>
+  <a href="{{ url_for('projects') }}" class="btn btn-primary mt-3">View My Projects</a>
+</div>
 {% endblock %}

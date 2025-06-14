@@ -1,6 +1,23 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% block title %}Projects - My Portfolio{% endblock %}
 {% block content %}
-<h1>My Projects</h1>
-<p>Details about my projects.</p>
+<h2>My Projects</h2>
+<div class="row">
+  <div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Fuzzy Match Tool</h5>
+        <p class="card-text">A Python GUI app that matches Excel data using RapidFuzz and Tkinter.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">CyberSec Script Kit</h5>
+        <p class="card-text">Command-line Python scripts for recon, scanning, and basic encryption.</p>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
