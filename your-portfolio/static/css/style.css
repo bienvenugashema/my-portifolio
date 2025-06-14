@@ -31,6 +31,69 @@ body {
   flex: 1;
 }
 
+/* Floating Chatbot Button */
+.chatbot-fab {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 1050;
+  border-radius: 50px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 12px 24px;
+  font-size: 1.1rem;
+}
+
+/* Floating Chatbot Widget */
+.chatbot-widget {
+  position: fixed;
+  bottom: 90px;
+  right: 32px;
+  width: 350px;
+  max-width: 95vw;
+  z-index: 1060;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  border-radius: 16px;
+  transition: width 0.2s, height 0.2s;
+}
+.chatbot-widget.large {
+  width: 500px !important;
+  height: 600px !important;
+}
+
+/* Chatbot styles */
+.chatbot-container {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+#chat-messages {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 300px;
+  overflow-y: auto;
+  font-size: 1rem;
+}
+
+#chat-form input[type="text"] {
+  border-radius: 20px;
+}
+
+#chat-form button {
+  border-radius: 20px;
+}
+
+.text-end {
+  text-align: right;
+}
+
+.text-start {
+  text-align: left;
+}
+
 h2 {
   margin-top: 20px;
 }
