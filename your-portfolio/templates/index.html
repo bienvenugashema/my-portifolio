@@ -1,9 +1,11 @@
 {% extends "base.html" %}
-{% block title %}Home - My Portfolio{% endblock %}
+{% block title %}Home - My Showcase{% endblock %}
 {% block content %}
-<div class="text-center">
+<div class="hero-section text-center py-5">
+  <img src="{{ url_for('static', filename='img/profile.jpeg') }}" alt="Profile Picture" class="profile-img mb-3">
   <h1 class="display-4">Hi, I'm Bienvenu 👋</h1>
-  <p class="lead">I'm a Python developer focused on cybersecurity, web apps, and automation.</p>
-  <a href="{{ url_for('projects') }}" class="btn btn-primary mt-3">View My Projects</a>
+  <p class="lead">Developer | Python (Cybersecurity, Web Apps, Automation) | PHP Laravel | React</p>
+  <p class="tagline">Turning ideas into secure, modern, and impactful solutions.</p>
+  <a href="{{ url_for('projects') }}" class="btn btn-primary mt-3">Explore My Showcase</a>
 </div>
 {% endblock %}
