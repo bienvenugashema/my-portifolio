@@ -2,12 +2,15 @@
 from flask import Flask, render_template, request, jsonify
 import requests
 import os
-from dotenv import load_dotenv
-load_dotenv()
 
-app = Flask(__name__)
+# Set the template_folder and static_folder to the absolute paths
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+app = Flask(__name__, template_folder=TEMPLATE_DIR, static_folder=STATIC_DIR)
+
+GEMINI_API_KEY = "AIzaSyABBBQj5w6E33HEgL5I2dWB2Fp3PPW5Q70"
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + GEMINI_API_KEY
 
 @app.route('/')
