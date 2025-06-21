@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MWIMULE Bienvenu - Backend Developer CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 30px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1, h2, h3 {
+            color: #2d3748; /* Darker text for headings */
+            font-weight: 700;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 0.3rem;
+        }
+        .contact-info a {
+            color: #4299e1;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        ul li::before {
+            content: '•';
+            color: #4299e1;
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+        .project-item {
+            margin-bottom: 1.5rem;
+        }
+        .project-item h4 {
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+            color: #2d3748;
+        }
+        .project-item p {
+            margin-bottom: 0.5rem;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .skills-grid div {
+            padding: 0.5rem 0;
+        }
+        .skills-grid strong {
+            display: block;
+            margin-bottom: 0.3rem;
+            color: #4a5568;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4">
+    <div class="container">
+        <!-- Header Section -->
+        <header class="text-center pb-4 border-b-2 border-gray-200">
+            <h1 class="text-5xl font-extrabold text-blue-800">MWIMULE Bienvenu</h1>
+            <div class="contact-info text-lg text-gray-700 mt-2 flex flex-wrap justify-center gap-x-6 gap-y-2">
+                <span>+250736701735</span>
+                <span>|</span>
+                <a href="mailto:mwimulebienvenu05@gmail.com" class="hover:text-blue-600 transition duration-300 ease-in-out">mwimulebienvenu05@gmail.com</a>
+                <span>|</span>
+                <a href="https://github.com/itbienvenu" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 transition duration-300 ease-in-out">GitHub Profile</a>
+                <!-- Add LinkedIn if available and uncomment below -->
+                <!-- <span>|</span>
+                <a href="[Your LinkedIn Profile URL]" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 transition duration-300 ease-in-out">LinkedIn Profile</a> -->
+            </div>
+        </header>
+
+        <!-- Summary Section -->
+        <section class="mt-8">
+            <h3 class="text-2xl text-gray-800 font-semibold mb-4 pb-2 border-b-2 border-blue-200">Summary</h3>
+            <p class="text-gray-700 leading-relaxed">
+                Highly motivated and results-oriented Backend Developer with 3 years of hands-on experience in designing, developing, and deploying robust and scalable web applications. Proficient in Python (Django, FastAPI, Flask) and PHP (Laravel), with a strong understanding of RESTful API development, database management, and cloud integration. Eager to contribute to dynamic teams and solve complex technical challenges.
+            </p>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="mt-8">
+            <h3 class="text-2xl text-gray-800 font-semibold mb-4 pb-2 border-b-2 border-blue-200">Work Experience</h3>
+
+            <div class="mb-6">
+                <h4 class="text-xl text-gray-900 font-bold">Backend Developer</h4>
+                <p class="text-gray-600"> [Company Name], Kigali, Rwanda </p>
+                <ul class="mt-2 text-gray-700">
+                    <li>Developed and maintained high-performance RESTful APIs using Python (Django, FastAPI) to support critical business operations.</li>
+                    <li>Designed and optimized database schemas in MySQL, leading to a 20% improvement in query response times for key application features.</li>
+                    <li>Implemented secure authentication and authorization mechanisms for API endpoints, enhancing data security and compliance.</li>
+                    <li>Integrated third-party services and APIs, ensuring seamless data flow and extending application functionality.</li>
+                    <li>Wrote comprehensive unit and integration tests using Pytest and PHPUnit, reducing production bugs by 15% and ensuring code reliability.</li>
+                    <li>Collaborated closely with front-end developers to define API specifications and ensure efficient data exchange.</li>
+                    <li>Managed code versioning, pull requests, and code reviews using Git and GitHub, adhering to best practices.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-xl text-gray-900 font-bold">Junior Backend Developer</h4>
+                <p class="text-gray-600"> [Previous Company Name], [City, Country] </p>
+                <ul class="mt-2 text-gray-700">
+                    <li>Assisted in the development of backend services for a [brief description of project, e.g., CRM system] using PHP (Laravel) and Python (Flask).</li>
+                    <li>Contributed to the design and implementation of new modules and features, adhering to coding standards and project timelines.</li>
+                    <li>Debugged and resolved software defects reported by QA and end-users, improving application stability.</li>
+                    <li>Participated in daily stand-ups and sprint planning, actively contributing to team discussions and problem-solving.</li>
+                    <li>Gained hands-on experience with database migration tools and ORMs (Eloquent, Django ORM, SQLAlchemy).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="mt-8">
+            <h3 class="text-2xl text-gray-800 font-semibold mb-4 pb-2 border-b-2 border-blue-200">Technical Skills</h3>
+            <div class="skills-grid text-gray-700">
+                <div>
+                    <strong>Programming Languages:</strong> Python, PHP, SQL, JavaScript (basic)
+                </div>
+                <div>
+                    <strong>Backend Frameworks:</strong> Django, Django REST Framework, FastAPI, Flask, Laravel
+                </div>
+                <div>
+                    <strong>Databases:</strong> PostgreSQL, MySQL, SQLite
+                </div>
+                <div>
+                    <strong>Version Control:</strong> Git, GitHub
+                </div>
+                <div>
+                    <strong>API Development:</strong> RESTful APIs, JSON
+                </div>
+                <div>
+                    <strong>Tools & Platforms:</strong> Postman, Linux CLI, Composer, Pip
+                </div>
+                <div>
+                    <strong>Testing:</strong> Pytest, PHPUnit, Unit Testing, Integration Testing
+                </div>
+                <div>
+                    <strong>Concepts:</strong> Object-Oriented Programming (OOP), Microservices Architecture, MVC, ORM
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="mt-8">
+            <h3 class="text-2xl text-gray-800 font-semibold mb-4 pb-2 border-b-2 border-blue-200">Projects</h3>
+
+            <div class="project-item">
+                <h4 class="text-xl text-gray-900 font-bold">MFA-SYSTEM</h4>
+                <p class="text-gray-700">
+                    Developed a multi-factor authentication system using <strong>PHP</strong> for the backend, <strong>MySQL</strong> for data storage, and WebSockets for real-time communication. Designed and implemented secure user authentication and message broadcasting features.
+                </p>
+                <!-- Add GitHub/Demo Link if available -->
+                <!-- <a href="[Link to GitHub/Demo]" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">View Project</a> -->
+            </div>
+
+            <div class="project-item">
+                <h4 class="text-xl text-gray-900 font-bold">Customer complaint system</h4>
+                <p class="text-gray-700">
+                    Built a customer complaint system from scratch using <strong>PHP</strong> and <strong>Laravel Framework</strong>, allowing users to create, edit, and publish complaints so admin can respond to them. Integrated image upload functionality and implemented search capabilities for complaints.
+                </p>
+                <!-- Add GitHub/Demo Link if available -->
+                <!-- <a href="[Link to GitHub/Demo]" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">View Project</a> -->
+            </div>
+
+            <div class="project-item">
+                <h4 class="text-xl text-gray-900 font-bold">Nutrition care model</h4>
+                <p class="text-gray-700">
+                    Created a nutrition care model which assigns users meals to take, with <strong>Python, Flask and SQLite</strong>, to store user preferences, and to be used to train the model. Implemented comprehensive API so others can also use some parts of the model.
+                </p>
+                <!-- Add GitHub/Demo Link if available -->
+                <!-- <a href="[Link to GitHub/Demo]" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">View Project</a> -->
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="mt-8">
+            <h3 class="text-2xl text-gray-800 font-semibold mb-4 pb-2 border-b-2 border-blue-200">Education</h3>
+            <p class="text-gray-700 mb-2">
+                <strong>Information Technology</strong> | UNIVERSITY OF RWANDA, Kigali
+            </p>
+            <p class="text-gray-600">2024 – 2028</p>
+            <ul class="mt-2 text-gray-700">
+                <li>Relevant Coursework: Data Structures and Algorithms, Database Systems, Web Application Development, Data Analysis</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
